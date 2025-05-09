@@ -21,15 +21,22 @@ function getRandomTileType() {
 // ===========================
 
 const player = {
-  x: 0,
-  y: 0,
-  spawnX: 0,
-  spawnY: 0,
-  ore: 0,
-  digs: 0,
-  maxSteps: 50,
+  x: 150,
+  y: 150,
+  spawnX: 150,
+  spawnY: 150,
   stepsLeft: 50,
-  inventory: [null, null, null, null],
+  maxSteps: 50,
+  digs: 0,
+  diamond: 0,
+  gold: 0,
+  silver: 0,
+  ore: 0,
+  stone: 0,
+  clay: 0,
+  bone: 0,
+  dirt: 0,
+  inventory: [null, null, null, null]
 };
 
 // ===========================
