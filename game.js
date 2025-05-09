@@ -47,6 +47,19 @@ const player = {
   inventory: [null, null, null, null]
 };
 
+function updateCounters() {
+  document.getElementById("step-count").textContent = player.stepsLeft;
+  document.getElementById("digs-count").textContent = player.digs;
+  document.getElementById("diamond-count").textContent = player.diamond;
+  document.getElementById("gold-count").textContent = player.gold;
+  document.getElementById("silver-count").textContent = player.silver;
+  document.getElementById("ore-count").textContent = player.ore;
+  document.getElementById("stone-count").textContent = player.stone;
+  document.getElementById("clay-count").textContent = player.clay;
+  document.getElementById("bone-count").textContent = player.bone;
+  document.getElementById("dirt-count").textContent = player.dirt;
+}
+
 // ===========================
 // GRID & TILE CREATION
 // ===========================
@@ -92,7 +105,7 @@ function mineTile(x, y) {
   const type = tile.dataset.type;
   player[type] = (player[type] || 0) + 1;
 
-  updateInventoryUI();
+  updateCounters();
 }
 
 function collectMinedTile(tile) {
