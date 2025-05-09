@@ -9,10 +9,10 @@ function getRandomTileType() {
     { type: "silver", weight: 4 },
     { type: "ore", weight: 6 },
     { type: "stone", weight: 8 },
-    { type: "clay", weight: 10 },
+    { type: "clay", weight: 9 },
     { type: "bone", weight: 10 },
-    { type: "rock", weight: 20 },
-    { type: "dirt", weight: 39 } // MUST TOTAL 100 !!!
+    { type: "rock", weight: 30 },
+    { type: "dirt", weight: 30 } // MUST TOTAL 100 !!!
   ];
 
   const roll = Math.random() * 100;
