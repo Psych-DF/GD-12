@@ -217,6 +217,72 @@ background-color: lime;
   border-radius: 3px;
 }
 
+/* TILE EMPTY VISUALS */
+
+/* AFTER MINING CODE */
+
+.tile.empty[data-type="diamond"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.empty[data-type="gold"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.empty[data-type="silver"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.empty[data-type="ore"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.empty[data-type="stone"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+..tile.empty[data-type="clay"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.empty[data-type="bone"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.empty[data-type="dirt"] {
+  background-image: url('images/pebble.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.empty[data-type="rock"] {
+  background-color: #272121;
+  box-shadow: inset 0 0 0 1px black;
+  border-radius: 3px;
+}
+
 /* SCREEN SHADOW OUTLINE STYLING */
 
 #screen-shadow {
