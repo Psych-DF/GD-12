@@ -107,22 +107,6 @@ export function getTile(x, y) {
   return grid[index] || null;
 }
 
-// Defines function rebindGridEvents
-export function rebindGridEvents() {
-// Selects a single DOM element
-  document.querySelectorAll(".tile").forEach(tile => {
-// Adds an event listener to an element
-    tile.addEventListener("click", () => {
-// Declares constant x
-      const x = parseInt(tile.dataset.x, 10);
-// Declares constant y
-      const y = parseInt(tile.dataset.y, 10);
-      mineTile(x, y);
-    });
-  });
-}
-
-
 // ===========================
 // MINING LOGIC
 // ===========================
