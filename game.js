@@ -265,8 +265,6 @@ function updateInventoryUI() {
   });
 }
 
-}
-
 function showDayEndOverlay() {
   const overlay = document.getElementById("day-end-overlay");
   if (overlay) {
