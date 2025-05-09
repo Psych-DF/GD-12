@@ -18,6 +18,7 @@ body {
   width: 100vw;
   height: 100vh;
   overflow: auto;
+  scroll-behavior: smooth;
   cursor: none;
   scrollbar-width: none;        /* Firefox */
   -ms-overflow-style: none;     /* IE and Edge */
