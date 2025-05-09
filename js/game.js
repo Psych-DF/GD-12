@@ -418,35 +418,6 @@ document.addEventListener("keydown", (e) => {
   }
 });
 
-/* RAIN */
-
-// Defines function createPixelRain
-function createPixelRain() {
-// Declares constant rainContainer
-  const rainContainer = document.getElementById("rain");
-// Returns from a function
-  if (!rainContainer) return;
-
-// Declares constant numDrops
-  const numDrops = 100; // adjust for more or less rain
-
-// Declares variable i
-for (let i = 0; i < numDrops; i++) {
-// Declares constant drop
-  const drop = document.createElement("div");
-// Adds a CSS class to an element
-  drop.classList.add("pixel-drop");
-
-  drop.style.left = Math.random() * 100 + "vw";
-  drop.style.top = "-10px"; // ✅ critical line
-  drop.style.animationDelay = Math.random() * 5 + "s";
-  drop.style.animationDuration = 1 + Math.random() * 2 + "s";
-
-// Appends an element to the DOM
-  rainContainer.appendChild(drop);
-  }
-}
-
 /* collect mined object */
 
 // Adds a DOM event listener
