@@ -14,7 +14,14 @@ function getRandomTileType() {
     { type: "rock", weight: 10 },
     { type: "dirt", weight: 49 } // MUST TOTAL 100 !!!
   ];
-  return tileTypes[Math.floor(Math.random() * tileTypes.length)];
+
+  const roll = Math.random() * 100;
+  let cumulative = 0;
+
+  for (const { type, weight } of types) {
+    cumulative += weight;
+    if (roll < cumulative) return type;
+  }
 }
 
 // ===========================
