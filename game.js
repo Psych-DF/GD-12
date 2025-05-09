@@ -118,7 +118,6 @@ function collectMinedTile(tile) {
     player.inventory[slotIndex] = type;
     tile.classList.remove("mined");
     tile.classList.add("empty");
-    tile.dataset.type = "empty";
     updateInventoryUI();
   }
 }
