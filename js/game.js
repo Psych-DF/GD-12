@@ -81,13 +81,6 @@ export function createGrid(container) {
     for (let x = 0; x < gridWidth; x++) {
 // Declares constant type
       const type = getRandomTileType();
-
-      // Skip creating the tile if it's void
-      if (type === "void") {
-        grid.push(null); // still reserve space in grid
-        continue;
-      }
-
 // Declares constant tile
       const tile = document.createElement("div");
 // Adds a CSS class to an element
