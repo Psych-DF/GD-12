@@ -93,61 +93,19 @@ background-color: lime;
 }
 /* BEFORE MINING CODE */
 
-.tile[data-type="diamond"] {
-  background-image: url('images/ground.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.tile[data-type="gold"] {
-  background-image: url('images/ground.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.tile[data-type="silver"] {
-  background-image: url('images/ground.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.tile[data-type="ore"] {
-  background-image: url('images/ground.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.tile[data-type="stone"] {
-  background-image: url('images/ground.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.tile[data-type="clay"] {
-  background-image: url('images/ground.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-.tile[data-type="bone"] {
-  background-image: url('images/ground.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
+.tile[data-type="diamond"],
+.tile[data-type="silver"],
+.tile[data-type="ore"],
+.tile[data-type="gold"],
+.tile[data-type="stone"],
+.tile[data-type="clay"],
+.tile[data-type="bone"],
 .tile[data-type="dirt"] {
   background-image: url('images/ground.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-} 
+}
 
 /* BLACK BLOCKER TILES*/
 .tile[data-type="rock"] {
@@ -212,12 +170,6 @@ background-color: lime;
   background-position: center;
 }
 
-.tile.mined[data-type="rock"] {
-  background-color: #272121;
-  box-shadow: inset 0 0 0 1px black;
-  border-radius: 3px;
-}
-
 /*//////////////////////////////////////////////////////// TILE EMPTY VISUALS */
 
 .tile.empty[data-type="diamond"] {
@@ -274,12 +226,6 @@ background-color: lime;
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-}
-
-.tile.empty[data-type="rock"] {
-  background-color: #272121;
-  box-shadow: inset 0 0 0 1px black;
-  border-radius: 3px;
 }
 
 /* SCREEN SHADOW OUTLINE STYLING */
