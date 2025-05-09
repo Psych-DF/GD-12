@@ -254,7 +254,7 @@ background-color: lime;
   background-position: center;
 }
 
-..tile.empty[data-type="clay"] {
+.tile.empty[data-type="clay"] {
   background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
