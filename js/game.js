@@ -37,8 +37,8 @@ const player = {
 // ===========================
 
 function createGrid(container) {
-  for (let y = 0; y < 40; y++) {
-    for (let x = 0; x < 40; x++) {
+  for (let y = 0; y < 300; y++) {
+    for (let x = 0; x < 300; x++) {
       const tile = document.createElement("div");
       tile.className = "tile";
       tile.dataset.x = x;
