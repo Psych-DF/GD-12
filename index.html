@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Grave Digger</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- 🎯 Game UI -->
+  <div id="game-wrapper">
+    <div id="hud">
+      Steps Left: <span id="step-count">0</span><br>
+      Digs: <span id="digs-count">0</span><br>
+      Diamond: <span id="diamond-count">0</span><br>
+      Gold: <span id="gold-count">0</span><br>
+      Silver: <span id="silver-count">0</span><br>
+      Ore: <span id="ore-count">0</span><br>
+      Stone: <span id="stone-count">0</span><br>
+      Clay: <span id="clay-count">0</span><br>
+      Bone: <span id="bone-count">0</span><br>
+      Dirt: <span id="dirt-count">0</span>
+    </div>
+  <div id="inventory">
+  <div class="slot" id="slot-1"></div>
+  <div class="slot" id="slot-2"></div>
+  <div class="slot" id="slot-3"></div>
+  <div class="slot" id="slot-4"></div>
+  </div>
+  <div id="game">
+  </div>
+  </div>
+
+  <!-- 🌅 Day End Overlay -->
+  <div id="day-end-overlay">
+    <div class="day-end-content">
+      <h1>THE SUN RISES</h1>
+      <p>You dug <span id="stat-digs">0</span> times.</p>
+      <div id="casket-quote">Casket says: "You call that digging?"</div>
+      <br />
+      <button onclick="startNewDay()">Start New Day</button>
+    </div>
+  </div>
+
+  <!-- 🎮 Start Screen Overlay -->
+  <div id="start-screen-overlay" class="overlay active">
+    <div class="overlay-content">
+      <h1>THE GRAVE DIGGER</h1>
+      <p>Press Enter</p>
+    </div>
+  </div>
+
+  <script type="module" src="js/game.js"></script>
+</body>
+</html>
