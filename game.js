@@ -1,4 +1,5 @@
 // Tile list
+/*
 sword
 cat
 necklace
@@ -20,6 +21,7 @@ spider
 worm
 bell
 darkness
+*/
 
 // ===========================
 // TILE TYPE LOGIC
