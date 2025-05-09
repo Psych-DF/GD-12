@@ -90,7 +90,7 @@ function mineTile(x, y) {
   player.digs++;
 
   const type = tile.dataset.type;
-  if (type === "ore") player.ore++;
+  player[type] = (player[type] || 0) + 1;
 
   updateInventoryUI();
 }
