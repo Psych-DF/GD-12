@@ -217,61 +217,59 @@ background-color: lime;
   border-radius: 3px;
 }
 
-/* TILE EMPTY VISUALS */
-
-/* AFTER MINING CODE */
+/*//////////////////////////////////////////////////////// TILE EMPTY VISUALS */
 
 .tile.empty[data-type="diamond"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tile.empty[data-type="gold"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tile.empty[data-type="silver"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tile.empty[data-type="ore"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tile.empty[data-type="stone"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 ..tile.empty[data-type="clay"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tile.empty[data-type="bone"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tile.empty[data-type="dirt"] {
-  background-image: url('images/pebble.png');
+  background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
