@@ -3,15 +3,16 @@
 // ===========================
 
 function getRandomTileType() {
-  const tileTypes = [
-    "dirt", "dirt", "dirt", "dirt", "dirt",
-    "stone", "stone", "stone",
-    "clay", "clay",
-    "bone",
-    "ore",
-    "silver",
-    "gold",
-    "diamond"
+  const types = [
+    { type: "diamond", weight: 1 },
+    { type: "gold", weight: 2 },
+    { type: "silver", weight: 4 },
+    { type: "ore", weight: 6 },
+    { type: "stone", weight: 8 },
+    { type: "clay", weight: 10 },
+    { type: "bone", weight: 10 },
+    { type: "rock", weight: 10 },
+    { type: "dirt", weight: 49 } // MUST TOTAL 100 !!!
   ];
   return tileTypes[Math.floor(Math.random() * tileTypes.length)];
 }
