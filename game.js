@@ -29,27 +29,27 @@ darkness
 
 function getRandomTileType() {
   const types = [
-    { type: "sword", weight: 1 },
-    { type: "cat", weight: 1 },
-    { type: "necklace", weight: 1 },
-    { type: "heart", weight: 1 },
-    { type: "shroom", weight: 1 },
-    { type: "flame", weight: 1 },
-    { type: "key", weight: 1 },
-    { type: "bone", weight: 1 },
-    { type: "skull", weight: 1 },
-    { type: "crown", weight: 1 },
-    { type: "bottle", weight: 1 },
-    { type: "soil", weight: 1 },
-    { type: "coin", weight: 1 },
-    { type: "pebble", weight: 1 },
-    { type: "note", weight: 1 },
-    { type: "eye", weight: 1 },
-    { type: "root", weight: 1 },
-    { type: "spider", weight: 1 },
-    { type: "worm", weight: 1 },
-    { type: "bell", weight: 1 },
-    { type: "darkness", weight: 1 },
+    { type: "sword", weight: 3 },
+    { type: "cat", weight: 3 },
+    { type: "necklace", weight: 3 },
+    { type: "heart", weight: 3 },
+    { type: "shroom", weight: 3 },
+    { type: "flame", weight: 3 },
+    { type: "key", weight: 3 },
+    { type: "bone", weight: 3 },
+    { type: "skull", weight: 3 },
+    { type: "crown", weight: 3 },
+    { type: "bottle", weight: 3 },
+    { type: "soil", weight: 3 },
+    { type: "coin", weight: 3 },
+    { type: "pebble", weight: 3 },
+    { type: "note", weight: 3 },
+    { type: "eye", weight: 3 },
+    { type: "root", weight: 3 },
+    { type: "spider", weight: 3 },
+    { type: "worm", weight: 3 },
+    { type: "bell", weight: 3 },
+    { type: "darkness", weight: 40 },
   ];
 
   const roll = Math.random() * 100;
@@ -87,14 +87,26 @@ const player = {
 function updateCounters() {
   document.getElementById("step-count").textContent = player.stepsLeft;
   document.getElementById("digs-count").textContent = player.digs;
-  document.getElementById("diamond-count").textContent = player.diamond;
-  document.getElementById("gold-count").textContent = player.gold;
-  document.getElementById("silver-count").textContent = player.silver;
-  document.getElementById("ore-count").textContent = player.ore;
-  document.getElementById("stone-count").textContent = player.stone;
-  document.getElementById("clay-count").textContent = player.clay;
+  document.getElementById("sword-count").textContent = player.sword;
+  document.getElementById("cat-count").textContent = player.cat;
+  document.getElementById("necklace-count").textContent = player.necklace;
+  document.getElementById("heart-count").textContent = player.heart;
+  document.getElementById("shroom-count").textContent = player.shroom;
+  document.getElementById("flame-count").textContent = player.flame;
+  document.getElementById("key-count").textContent = player.key;
   document.getElementById("bone-count").textContent = player.bone;
-  document.getElementById("dirt-count").textContent = player.dirt;
+  document.getElementById("skull-count").textContent = player.skull;
+  document.getElementById("crown-count").textContent = player.crown;
+  document.getElementById("bottle-count").textContent = player.bottle;
+  document.getElementById("soil-count").textContent = player.soil;
+  document.getElementById("coin-count").textContent = player.coin;
+  document.getElementById("pebble-count").textContent = player.pebble;
+  document.getElementById("note-count").textContent = player.note;
+  document.getElementById("eye-count").textContent = player.eye;
+  document.getElementById("root-count").textContent = player.root;
+  document.getElementById("spider-count").textContent = player.spider;
+  document.getElementById("worm-count").textContent = player.worm;
+  document.getElementById("bell-count").textContent = player.bell;
 }
 
 // ===========================
@@ -277,14 +289,26 @@ function updateStepDisplay() {
 }
 
 const tileImages = {
-  diamond: "images/empty.png",
-  gold: "images/empty.png",
-  silver: "images/empty.png",
-  ore: "images/empty.png",
-  stone: "images/empty.png",
-  clay: "images/empty.png",
-  bone: "images/empty.png",
-  dirt: "images/empty.png"
+  sword: "images/sword.png",
+  cat: "images/cat.png",
+  necklace: "images/necklace.png",
+  heart: "images/heart.png",
+  shroom: "images/shroom.png",
+  flame: "images/flame.png",
+  key: "images/key.png",
+  bone: "images/bone.png",
+  skull: "images/skull.png",
+  crown: "images/crown.png",
+  bottle: "images/bottle.png",
+  soil: "images/soil.png",
+  coin: "images/coin.png",
+  pebble: "images/pebble.png",
+  note: "images/note.png",
+  eye: "images/eye.png",
+  root: "images/root.png",
+  spider: "images/spider.png",
+  worm: "images/worm.png",
+  bell: "images/bell.png",
 };
 
 function updateInventoryUI() {
