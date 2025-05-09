@@ -30,8 +30,8 @@ body {
 /* GRID */
 #game {
   display: grid;
-  grid-template-columns: repeat(500, 24px);
-  grid-template-rows: repeat(500, 24px);
+  grid-template-columns: repeat(300, 24px);
+  grid-template-rows: repeat(300, 24px);
   gap: 2px;
   /* REMOVE these two lines 👇 */
   /* margin: 0 auto;
@@ -49,8 +49,8 @@ body {
 
 #game {
   display: grid;
-  grid-template-columns: repeat(500, 24px);
-  grid-template-rows: repeat(500, 24px);
+  grid-template-columns: repeat(300, 24px);
+  grid-template-rows: repeat(300, 24px);
   gap: 2px;
   width: fit-content;
 }
