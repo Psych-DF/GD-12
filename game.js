@@ -1,18 +1,53 @@
+// Tile list
+sword
+cat
+necklace
+heart
+shroom
+flame
+key
+bone
+skull
+crown
+bottle
+soil
+coin
+pebble
+note
+eye
+root
+spider
+worm
+bell
+darkness
+
 // ===========================
 // TILE TYPE LOGIC
 // ===========================
 
 function getRandomTileType() {
   const types = [
-    { type: "diamond", weight: 1 },
-    { type: "gold", weight: 2 },
-    { type: "silver", weight: 4 },
-    { type: "ore", weight: 6 },
-    { type: "stone", weight: 8 },
-    { type: "clay", weight: 9 },
-    { type: "bone", weight: 10 },
-    { type: "rock", weight: 30 },
-    { type: "dirt", weight: 30 } // MUST TOTAL 100 !!!
+    { type: "sword", weight: 1 },
+    { type: "cat", weight: 1 },
+    { type: "necklace", weight: 1 },
+    { type: "heart", weight: 1 },
+    { type: "shroom", weight: 1 },
+    { type: "flame", weight: 1 },
+    { type: "key", weight: 1 },
+    { type: "bone", weight: 1 },
+    { type: "skull", weight: 1 },
+    { type: "crown", weight: 1 },
+    { type: "bottle", weight: 1 },
+    { type: "soil", weight: 1 },
+    { type: "coin", weight: 1 },
+    { type: "pebble", weight: 1 },
+    { type: "note", weight: 1 },
+    { type: "eye", weight: 1 },
+    { type: "root", weight: 1 },
+    { type: "spider", weight: 1 },
+    { type: "worm", weight: 1 },
+    { type: "bell", weight: 1 },
+    { type: "darkness", weight: 1 },
   ];
 
   const roll = Math.random() * 100;
@@ -179,7 +214,7 @@ function movePlayer(key) {
   }
 
   const nextTile = getTile(newX, newY);
-  if (!nextTile || nextTile.dataset.type === "rock") return;
+  if (!nextTile || nextTile.dataset.type === "darkness") return;
 
   player.x = newX;
   player.y = newY;
