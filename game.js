@@ -239,13 +239,32 @@ function updateStepDisplay() {
   if (el) el.textContent = player.stepsLeft;
 }
 
+const tileImages = {
+  diamond: "images/empty.png",
+  gold: "images/empty.png",
+  silver: "images/empty.png",
+  ore: "images/empty.png",
+  stone: "images/empty.png",
+  clay: "images/empty.png",
+  bone: "images/empty.png",
+  dirt: "images/empty.png"
+};
+
 function updateInventoryUI() {
-  for (let i = 0; i < 4; i++) {
+  player.inventory.forEach((type, i) => {
     const slot = document.getElementById(`slot-${i + 1}`);
-    const item = player.inventory[i];
-    slot.textContent = item ? item.toUpperCase() : "";
-    slot.title = item || "Empty";
-  }
+    slot.innerHTML = ""; // Clear previous content
+
+    if (type) {
+      const img = document.createElement("img");
+      img.src = tileImages[type];
+      img.alt = type;
+      img.classList.add("inventory-icon");
+      slot.appendChild(img);
+    }
+  });
+}
+
 }
 
 function showDayEndOverlay() {
