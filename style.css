@@ -108,7 +108,7 @@ background-color: lime;
 }
 
 /* BLACK BLOCKER TILES*/
-.tile[data-type="rock"] {
+.tile[data-type="darkness"] {
   background-color: #000000;
 }
 
