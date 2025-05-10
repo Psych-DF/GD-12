@@ -191,15 +191,9 @@ let mineTimeout = null;
 
 function initGame() {
   const gameContainer = document.getElementById("game");
-  const oreDisplay = document.getElementById("ore-count");
 
   gameContainer.innerHTML = "";
   createGrid(gameContainer);
-
-  oreDisplay.textContent = player.ore;
-  updatePlayerPosition();
-  centerCameraOnPlayer();
-  updateStepDisplay();
 
   document.addEventListener("keydown", handleKeyDown);
   document.addEventListener("keyup", handleKeyUp);
