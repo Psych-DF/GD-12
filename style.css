@@ -267,14 +267,26 @@ background-color: lime;
 
 /*//////////////////////////////////////////////////////// TILE EMPTY VISUALS */
 
-.tile.empty[data-type="diamond"],
-.tile.empty[data-type="silver"],
-.tile.empty[data-type="ore"],
-.tile.empty[data-type="gold"],
-.tile.empty[data-type="stone"],
-.tile.empty[data-type="clay"],
+.tile.empty[data-type="sword"],
+.tile.empty[data-type="cat"],
+.tile.empty[data-type="necklace"],
+.tile.empty[data-type="heart"],
+.tile.empty[data-type="shroom"],
+.tile.empty[data-type="flame"],
+.tile.empty[data-type="key"],
 .tile.empty[data-type="bone"],
-.tile.empty[data-type="dirt"] {
+.tile.empty[data-type="skull"],
+.tile.empty[data-type="crown"],
+.tile.empty[data-type="bottle"],
+.tile.empty[data-type="soil"],
+.tile.empty[data-type="coin"],
+.tile.empty[data-type="pebble"],
+.tile.empty[data-type="note"],
+.tile.empty[data-type="eye"],
+.tile.empty[data-type="root"],
+.tile.empty[data-type="spider"],
+.tile.empty[data-type="worm"],
+.tile.empty[data-type="bell"] {
   background-image: url('images/empty.png');
   background-size: contain;
   background-repeat: no-repeat;
