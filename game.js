@@ -1,28 +1,3 @@
-// Tile list
-/*
-sword
-cat
-necklace
-heart
-shroom
-flame
-key
-bone
-skull
-crown
-bottle
-soil
-coin
-pebble
-note
-eye
-root
-spider
-worm
-bell
-darkness
-*/
-
 // ===========================
 // TILE TYPE LOGIC
 // ===========================
@@ -31,21 +6,21 @@ function getRandomTileType() {
   const types = [
     { type: "sword", weight: 3 },
     { type: "cat", weight: 3 },
-    { type: "necklace", weight: 3 },
+    { type: "necklace", weight: 1 },
     { type: "heart", weight: 3 },
-    { type: "shroom", weight: 3 },
-    { type: "flame", weight: 3 },
-    { type: "key", weight: 3 },
-    { type: "bone", weight: 3 },
+    { type: "shroom", weight: 5 },
+    { type: "flame", weight: 1 },
+    { type: "key", weight: 1 },
+    { type: "bone", weight: 5 },
     { type: "skull", weight: 3 },
-    { type: "crown", weight: 3 },
+    { type: "crown", weight: 1 },
     { type: "bottle", weight: 3 },
-    { type: "soil", weight: 3 },
-    { type: "coin", weight: 3 },
-    { type: "pebble", weight: 3 },
+    { type: "soil", weight: 5 },
+    { type: "coin", weight: 1 },
+    { type: "pebble", weight: 5 },
     { type: "note", weight: 3 },
     { type: "eye", weight: 3 },
-    { type: "root", weight: 3 },
+    { type: "root", weight: 5 },
     { type: "spider", weight: 3 },
     { type: "worm", weight: 3 },
     { type: "bell", weight: 3 },
