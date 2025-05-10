@@ -91,80 +91,176 @@ background-color: lime;
   color: #4dd;
   font-family: monospace;
 }
-/* BEFORE MINING CODE */
+/* SPAWN STATE TILES */
 
-.tile[data-type="diamond"],
-.tile[data-type="silver"],
-.tile[data-type="ore"],
-.tile[data-type="gold"],
-.tile[data-type="stone"],
-.tile[data-type="clay"],
+.tile[data-type="sword"],
+.tile[data-type="cat"],
+.tile[data-type="necklace"],
+.tile[data-type="heart"],
+.tile[data-type="shroom"],
+.tile[data-type="flame"],
+.tile[data-type="key"],
 .tile[data-type="bone"],
-.tile[data-type="dirt"] {
+.tile[data-type="skull"],
+.tile[data-type="crown"],
+.tile[data-type="bottle"],
+.tile[data-type="soil"],
+.tile[data-type="coin"],
+.tile[data-type="pebble"],
+.tile[data-type="note"],
+.tile[data-type="eye"],
+.tile[data-type="root"],
+.tile[data-type="spider"],
+.tile[data-type="worm"],
+.tile[data-type="bell"] {
   background-image: url('images/ground.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-/* BLACK BLOCKER TILES*/
+/* SPAWN STATE DARKNESS*/
 .tile[data-type="darkness"] {
   background-color: #000000;
 }
 
 /* AFTER MINING CODE */
 
-.tile.mined[data-type="diamond"] {
-  background-image: url('images/pebble.png');
+.tile.mined[data-type="sword"] {
+  background-image: url('images/sword.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.tile.mined[data-type="gold"] {
-  background-image: url('images/pebble.png');
+.tile.mined[data-type="cat"] {
+  background-image: url('images/cat.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.tile.mined[data-type="silver"] {
-  background-image: url('images/pebble.png');
+.tile.mined[data-type="necklace"] {
+  background-image: url('images/necklace.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.tile.mined[data-type="ore"] {
-  background-image: url('images/pebble.png');
+.tile.mined[data-type="heart"] {
+  background-image: url('images/heart.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.tile.mined[data-type="stone"] {
-  background-image: url('images/pebble.png');
+.tile.mined[data-type="shroom"] {
+  background-image: url('images/shroom.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.tile.mined[data-type="clay"] {
-  background-image: url('images/pebble.png');
+.tile.mined[data-type="flame"] {
+  background-image: url('images/flame.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="key"] {
+  background-image: url('images/key.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .tile.mined[data-type="bone"] {
+  background-image: url('images/bone.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="skull"] {
+  background-image: url('images/skull.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="crown"] {
+  background-image: url('images/crown.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="bottle"] {
+  background-image: url('images/bottle.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="soil"] {
+  background-image: url('images/soil.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="coin"] {
+  background-image: url('images/coin.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="pebble"] {
   background-image: url('images/pebble.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
 }
 
-.tile.mined[data-type="dirt"] {
-  background-image: url('images/pebble.png');
+.tile.mined[data-type="note"] {
+  background-image: url('images/note.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="eye"] {
+  background-image: url('images/eye.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="root"] {
+  background-image: url('images/root.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="spider"] {
+  background-image: url('images/spider.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="worm"] {
+  background-image: url('images/worm.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.tile.mined[data-type="bell"] {
+  background-image: url('images/bell.png');
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
