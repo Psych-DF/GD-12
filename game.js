@@ -195,6 +195,9 @@ function initGame() {
   gameContainer.innerHTML = "";
   createGrid(gameContainer);
 
+  updatePlayerPosition();          // ✅ add this
+  centerCameraOnPlayer();  
+
   document.addEventListener("keydown", handleKeyDown);
   document.addEventListener("keyup", handleKeyUp);
 }
